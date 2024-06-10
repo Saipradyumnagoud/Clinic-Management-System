@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+    <script src="firebase/firebase-config.js"></script>
+</head>
+<body>
+    <h1>Doctor Login</h1>
+    <div class="login-form">
+        <input type="email" id="doctorEmail" placeholder="Email">
+        <input type="password" id="doctorPassword" placeholder="Password">
+        <button onclick="doctorLogin()">Login</button>
+    </div>
+    <div id="doctorInfo" style="display: none;">
+        <h2>Patient Information</h2>
+        <div id="patientData"></div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
